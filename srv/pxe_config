@@ -7,6 +7,6 @@ timeout 0
 DEFAULT wheezy_amd64
 
 LABEL wheezy_amd64
-  kernel debian/wheezy/amd64/linux
-  append initrd=debian/wheezy/amd64/initrd.gz auto=true interface=auto netcfg/dhcp_timeout=60 netcfg/choose_interface=auto priority=critical url=http://10.0.0.1/pxe/preseed.cfg DEBCONF_DEBUG=5
+  kernel debian-installer/amd64/linux
+  append initrd=debian-installer/amd64/initrd.gz auto=true interface=auto netcfg/dhcp_timeout=60 netcfg/choose_interface=auto priority=critical url=http://10.0.0.1:8000/preseed.cfg DEBCONF_DEBUG=5
   IPAPPEND 2

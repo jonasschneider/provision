@@ -1,5 +1,5 @@
 # grab our firstboot script
-/usr/bin/curl -o /root/firstboot http://10.0.0.1:8000/pxe/firstboot
+/usr/bin/curl -o /root/firstboot http://192.168.0.13:8000/firstboot.sh
 chmod +x /root/firstboot
 
 # create a service that will run our firstboot script

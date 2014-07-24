@@ -5,7 +5,7 @@ PUBKEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbc9w+07fcbzgGAruNg7aUQK3z/ZdJpW8A
 apt-get -y install openssh-server
 mkdir /root/.ssh
 echo "$PUBKEY" > /root/.ssh/authorized_keys
-
+passwd -dl root # remove my password
 
 
 
